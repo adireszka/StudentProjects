@@ -1,0 +1,101 @@
+body{
+    background: lightgray;
+    display: inline;
+    background: url(savanna.jpeg) center no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: -15px;
+}
+header{
+    overflow: hidden;
+}
+header a{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden;
+}
+li{
+    width: 100%;
+    list-style-type: none;
+    background: rgb(42, 106, 165);
+    padding: 0;
+}
+li ul{
+    display: none;
+    padding: 0px;
+}
+li:hover ul {
+    display:block;
+    position: absolute;
+    top:70px;
+    background-color: #a0a0a0;
+}
+li ul li a{
+    border: 0.5px black solid;
+}
+li > ul > li{
+    display: block;
+    background: rgb(0, 225, 255);
+}
+li > a{
+    display: inline;
+}
+li > a:hover{
+    opacity: 0.5;
+}
+#pl{
+    background: whitesmoke;
+    float: inline-start;
+    width: 45%;
+    margin-left: 2%;
+}
+#pp{
+    background: whitesmoke;
+    float: inline-end;
+    width: 45%;
+    margin-right: 2%;
+}
+footer{
+    background: rgb(76, 104, 245);
+    width: 100%;
+    text-align: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height: 120px;
+    align-items:stretch
+}
+footer p{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#obrazek{
+   width: 100%;
+   height: 250px;
+}
+table {
+    border-collapse: collapse;
+ 
+} 
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom:#a0a0a0 solid 1px;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        flex-direction: column;
+    }
+    #pl, #pp{
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+}

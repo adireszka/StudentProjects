@@ -1,0 +1,112 @@
+@bgcolour: #FFE7E7;
+
+body {
+    border: black 1px solid;
+    a {
+        text-decoration: none;
+    }
+  
+  #container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: darken(@bgcolour, 5%);
+        text-align: center;
+        
+        img {
+        margin: auto;
+        }
+    }
+    
+    nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 77px;
+        height: 50px;
+        background-image: url("IMG/bg_nav.png");
+        background-repeat: repeat-x;
+        
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            display: inline-block;
+            padding: 0 2% 0 2%;
+            border-right: black 2px solid;
+            
+            a {
+                margin-top: 3%;
+                color: white;
+                display: block;    
+            }
+            
+            &:hover {
+                background-image: url("IMG/bg_nav_h.png");
+                background-size: 100% 100%;
+            }
+        }
+        }
+
+        @media screen and (max-width: 800px){
+            text-align: center;
+        }
+    }
+        
+    #left {
+      order: 1;
+      width: 20%;
+      background: @bgcolour;
+      padding: 1%;
+      margin-top: 95px;
+      margin-bottom: 50px;
+    
+      a{
+        text-decoration: underline;
+        color: black;
+      }
+    }     
+    
+    #important {
+      order: 3;
+      width: 20%;
+      background: darken(@bgcolour, 6%);
+      padding: 1%;
+      margin-top: 95px;
+      margin-bottom: 50px;
+
+      a{
+        text-decoration: underline;
+        color: black;
+      }
+      ul{
+        list-style-image: url("IMG/bullet.png");
+      }
+    }
+    
+    #main {
+      order: 2;
+      width: 54%;
+      padding: 1%;
+      margin-top: 95px;
+      margin-bottom: 50px;
+      background: lighten(@bgcolour, 3%);
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: darken(@bgcolour, 9%);
+        text-align: center;
+    }
+  }
+}

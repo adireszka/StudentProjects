@@ -1,0 +1,66 @@
+body{
+    background: url(savanna.jpeg) center no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: -15px;
+}
+main{
+    margin-left: 10%;
+    width: 80%;
+}
+header{
+    float: inline-start;
+    width: 20%;
+    height: 730px;
+    background: rgba(204, 120, 100, 0.5);
+}
+#prawa{
+    background: burlywood;
+    height: 730px;
+    overflow-y: scroll;
+    padding-left: 20px;
+}
+footer{
+    margin-top: -16px;
+    background: sandybrown;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+li{
+    border: 0.5px black solid;
+    background: brown;
+    list-style-type: none;
+    padding: 0;
+    margin-left: -40px;
+}
+li > ul > li{
+    padding-left: 50px;
+    background: red;
+}
+li > a{
+    display: block;
+}
+li > a:hover{
+    opacity: 0.5;
+}
+#fr{
+    float: left;
+    width: 50%;
+}
+#fl{
+    float: left;
+    width: 50%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(odd) {background-color: #a0a0a0;}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Adrian Reszka. Technologie Internetu</title> 
+    </head>
+    <body>
+        <div itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">Adrian Reszka</span>
+            <img src="kapybara.jpeg" itemprop="image" />
+            <meta itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization" itemref="zso1">
+            <meta itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization" itemref="zsh">
+        </div>
+        <div id="zso1">
+            <span itemprop="name">ZSO1</span>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress"> ul. Niemcewicza 1 </span>
+                <span itemprop="addressLocality"> Pruszcz Gdański </span>
+                <span itemprop="postalCode"> 83-000 </span>
+            </div>
+        </div>
+
+        <div id="zsh">
+            <span itemprop="name">ZSH</span>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress"> ul. Wejherowska 1 </span>
+                <span itemprop="addressLocality"> Sopot </span>
+                <span itemprop="postalCode"> 81-814 </span>
+            </div>
+        </div>
+    </body>
+</html>
